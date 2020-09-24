@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="pt-PT">
+    <head>
+        <title>Form</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <header>
+            <h1>Formulário</h1>
+        </header>
+
+        <form action="save.php" method="get">
+            <label>
+                Nome: <input type="text" name="nome">
+            </label><br><br>
+
+            <div>
+                Idade:
+                <label><input type="radio" name="idade" value="&lt;18">&lt;18</label>
+                <label><input type="radio" name="idade" value="19-35">19-35</label>
+                <label><input type="radio" name="idade" value="36-48">36-48</label>
+                <label><input type="radio" name="idade" value="&gt;49">&gt;49</label>
+            </div><br>
+
+            <label>
+                Profissão: <input type="text" name="profissao">
+            </label><br><br>
+
+            <label>
+                País:
+                <select name="pais">
+                    <option value="portugal">Portugal</option>
+                    <option value="espanha">Espanha</option>
+                    <option value="franca">França</option>
+                    <option value="italia">Itália</option>
+                    <option value="malta">Malta</option>
+                </select>
+            </label><br><br>
+
+            <div>
+                Interesses:<br>
+                <label><input type="checkbox" name="interesses" value="musica">Música</label>
+                <label><input type="checkbox" name="interesses" value="jogos">Jogos</label>
+                <label><input type="checkbox" name="interesses" value="politica">Política</label>
+                <br>
+                <label><input type="checkbox" name="interesses" value="cinema">Cinema</label>
+                <label><input type="checkbox" name="interesses" value="desporto">Desporto</label>
+                <label><input type="checkbox" name="interesses" value="culinaria">Culinária</label>
+            </div><br>
+
+            <label>
+                Como descobriste este site?<br>
+                <textarea name="origem" rows="4" cols="50" placeholder="Introduz uma pequena explicação..."></textarea>
+            </label><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
