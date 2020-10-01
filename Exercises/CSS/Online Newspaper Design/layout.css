@@ -1,0 +1,55 @@
+html {
+    background-color: #EDEFF0;
+}
+
+body {
+    width: 60em;
+    position: relative;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas: "header header"
+                         "navmenu related"
+                         "news related"
+                         "footer related";
+}
+
+#menu ul {
+    display: flex;
+}
+
+#menu ul li {
+    flex-grow: 1;
+}
+
+body header {
+    grid-area: header;
+    position: relative;
+}
+
+body header h1, body header h2 {
+    grid-area: header;
+}
+
+#signup {
+    position: absolute;
+    right: 2em;
+    bottom: 1em;
+}
+
+#menu {
+    grid-area: navmenu;
+}
+
+#related {
+    grid-area: related;
+}
+
+#news {
+    grid-area: news;
+}
+
+body footer {
+    grid-area: footer;
+    margin-right: 1em;
+}

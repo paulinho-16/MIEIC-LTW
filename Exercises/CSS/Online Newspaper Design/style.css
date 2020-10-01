@@ -7,9 +7,6 @@ body > header {
     margin-top: 0.5em;
     background-color: #046DD5;
     padding: 1em;
-    border-bottom-style: solid;
-    border-bottom-color:#E1493E;
-    border-bottom-width: thick;
 }
 
 header > h1 {
@@ -56,7 +53,8 @@ a {
     font-weight: bold;
     font-size: 95%;
     text-align: center;
-    padding: 0em 0em;
+    padding: 0em;
+    margin: 0em;
 }
 
 
@@ -70,28 +68,28 @@ a {
 }
 
 #menu > ul > li:first-child {
-    padding-top: 0em;
-    border-bottom: #8ABA56 solid thick;
+    border-top: #E1493E solid thick;
 }
 
 #menu > ul > li:nth-child(2) {
-    border-bottom: #5B4282 solid thick;
+    border-top: #8ABA56 solid thick;
 }
 
 #menu > ul > li:nth-child(3) {
-    border-bottom: #FF8932 solid thick;
+    border-top: #5B4282 solid thick;
 }
 
 #menu > ul > li:nth-child(4) {
-    border-bottom: #19B6E9 solid thick;
+    border-top: #FF8932 solid thick;
 }
 
 #menu > ul > li:nth-child(5) {
-    border-bottom: #E84C8B solid thick;
+    border-top: #19B6E9 solid thick;
 }
 
 #menu > ul > li:nth-child(6) {
-    padding-bottom: 0em;
+    border-top: #E84C8B solid thick;
+    padding-bottom: 1em;
 }
 
 aside#related {
@@ -119,7 +117,7 @@ aside#related p {
 #news article > header {
     position: absolute;
     padding: 1.5em;
-    width: 15.5%;
+    width: 32%;
     text-shadow: 5px 5px 5px black;
     line-height: 2em;
 }
