@@ -4,7 +4,6 @@ body {
 }
 
 body > header {
-    margin-top: 0.5em;
     background-color: #046DD5;
     padding: 1em;
 }
@@ -49,6 +48,7 @@ a {
 }
 
 #menu > ul {
+    background-color: white;
     list-style-type: none;
     font-weight: bold;
     font-size: 95%;
@@ -56,7 +56,6 @@ a {
     padding: 0em;
     margin: 0em;
 }
-
 
 #menu > ul > li {
     padding: 1em 0em;
@@ -109,6 +108,7 @@ aside#related p {
 }
 
 #news article {
+    background-color: white;
     margin-top: 1em;
     margin-right: 1em;
     position: relative;
@@ -170,6 +170,6 @@ aside#related p {
 body > footer {
     background-color: #2A2F33;
     color: white;
-    margin: 1em 0em;
+    margin-top: 1em;
     padding: 0.25em 1em;
 }
