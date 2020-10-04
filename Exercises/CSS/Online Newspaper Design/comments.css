@@ -1,0 +1,78 @@
+#comments {
+    margin-left: 1em;
+}
+
+#comments h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}
+
+#comments .user {
+    font-size: 95%;
+    font-weight: 600;
+    font-style: italic;
+}
+
+#comments .user::after {
+    font-style: normal;
+    content: ' said:';
+}
+
+#comments .date {
+    font-size: 95%;
+    font-weight: 600;
+    float: right;
+}
+
+#comments article p::before {
+    content: '\201C';
+    font-size: 3em;
+    color: #ccc;
+    position: relative;
+    top: 0.3em;
+}
+
+#comments article p {
+    background-color: #EDEFF0;
+    padding: 1em;
+}
+
+#comments form {
+    background-color: #EDEFF0;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+#comments form > h2 {
+    font-size: 1em;
+}
+
+#comments form label {
+    font-weight: 600;
+}
+
+#comments form input {
+    background-color: #EDEFF0;
+    border-color: #ccc;
+    border-bottom: none;
+    border-right: none;
+}
+
+#comments form textarea {
+    width: 99%;
+    height: 6em;
+    border-color: #ccc;
+}
+
+#comments form input[type=submit] {
+    width: auto;
+
+  background-color: black;
+  color: #EDEFF0;
+
+  border: none;
+  margin-top: 0.8em;
+  margin-bottom: 0.9em;
+  padding: 1em;
+  margin-left: auto;
+}

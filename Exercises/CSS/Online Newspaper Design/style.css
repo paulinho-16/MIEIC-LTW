@@ -136,8 +136,8 @@ aside#related p {
     line-height: 1.4em;
 }
 
-#news p:first-of-type::first-letter {
-    font-size: 200%;
+#news > article > p:first-of-type:first-letter {
+    font-size: 2em;
 }
 
 #news footer {
