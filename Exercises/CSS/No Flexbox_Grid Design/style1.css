@@ -1,0 +1,93 @@
+html {
+    background-color: #DDDDFF;
+}
+
+h1, h2, h3 {
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    background-color: white;
+    margin: 0em auto;
+    width: 50em;
+    height: 90.5em;
+}
+
+#header {
+    background-color: #666;
+    color: white;
+    padding: 1em;
+}
+
+#menu {
+    background-color: #300;
+}
+
+#menu ul {
+    padding: 0.8em 0em;
+    margin: 0em;
+}
+
+#menu li {
+    display: inline;
+    list-style: none;
+    border-right: 1px white solid;
+    padding: 0.1em 0.7em;
+}
+
+#menu li:last-child {
+    border-right: none;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#content {
+    padding: 0.6em;
+    padding-top: 0em;
+}
+
+.news-item h3 {
+    font-size: 160%;
+    margin: 0.4em 0em;
+}
+
+.news-item img {
+    float: left;
+    padding: 0em 0.7em 0.7em 0em;
+}
+
+.news-item .introduction {
+    font-style: italic;
+}
+
+.news-item {
+    border-bottom: 1px solid black;
+}
+
+#content a {
+    text-decoration: none;
+}
+
+.news-item ul {
+    list-style: none;
+    padding-left: 0em;
+    padding-top: 1em;
+    margin-bottom: 0.7em;
+}
+
+.news-item ul li {
+    display: inline;
+    background-color: #333;
+    padding: 0.3em 0.5em;
+}
+
+.news-item ul li a {
+    color: white;
+}
+
+#footer {
+    padding: 0 0 0 0.5em;
+}
