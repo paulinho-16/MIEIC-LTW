@@ -1,0 +1,111 @@
+html {
+    background-color: #DDDDFF;
+}
+
+body {
+    font-family: Times, serif;
+    width: 50em;
+    margin: 0em auto;
+    background-color: white;
+}
+
+h1, h2, h3 {
+    font-family: Verdana, sans-serif;
+}
+
+#header {
+    background-color: #369;
+    color: white;
+    position: relative;
+    padding: 1em;
+}
+
+#header > h2 {
+    position: absolute;
+    background-color: #369;
+    transform: rotate(90deg);
+    left: 0em;
+    top: 0em;
+    margin: 0em;
+    text-align: center;
+    width: 95%;
+    transform-origin: 0em 0em;
+    padding: 0.5em;
+}
+
+#menu {
+    background-color: #693;
+    float: right;
+    width: 12em;
+    height: 92.4em;
+    margin-left: 0.5em;
+}
+
+#menu ul {
+    list-style: none;
+    width: 0em auto;
+    padding: 0em;
+}
+
+#menu li {
+    display: block;
+    padding: 1.3em 1em;
+    text-align: center;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+#content {
+    line-height: 1.3em;
+    padding: 0.5em;
+    padding-bottom: 0em;
+}
+
+#content h3 {
+    font-size: 160%;
+    margin-top: 0.2em;
+    margin-bottom: 0.6em;
+}
+
+#content a {
+    text-decoration: none;
+}
+
+#content img {
+    float: left;
+    margin: 0em 0.7em 0.5em 0em;
+}
+
+#content .introduction {
+    font-style: italic;
+}
+
+.news-item ul {
+    list-style: none;
+    padding: 0em;
+    margin-bottom: 0.6em;
+}
+
+.news-item li {
+    display: inline;
+    border-bottom: solid #963;
+    padding: 0.3em 0.6em;
+    margin: 0em;
+}
+
+.news-item {
+    border-bottom: 1px solid black;
+    width: 37em;
+}
+
+.news-item li a {
+    color: black;
+}
+
+#footer p {
+    margin: 0em;
+    padding-left: 0.5em;
+}
