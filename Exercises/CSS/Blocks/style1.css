@@ -1,0 +1,19 @@
+body {
+    display: flex;
+}
+
+section {
+    order: 3;
+}
+
+#orange {
+    flex-grow: 1;
+}
+
+#yellow {
+    order: 1;
+}
+
+#red {
+    order: 2;
+}
