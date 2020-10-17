@@ -1,0 +1,92 @@
+#menu {
+    position: relative;
+}
+
+#register, #login {
+    position: absolute;
+    top: 11%;
+    left: 19%;
+}
+
+#register > h1, #login > h1 {
+    text-align: center;
+}
+
+#register > form {
+    background-color: white;
+    padding: 1em;
+    width: 20em;
+    height: 20em;
+}
+
+#login > form {
+    background-color: white;
+    padding: 1em;
+    width: 20em;
+    height: 15em;
+}
+
+#register > form > label, #login > form > label {
+    display: block;
+    font-size: 95%;
+    font-weight: 600;
+    padding: 1em;
+}
+
+#register > form > label > input, #login > form > label > input {
+    display: block;
+}
+
+#register label input, #login label input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin-top: 1em;
+}
+
+#register input[type=submit], #login input[type=submit] {
+    font-size: 95%;
+    background-color: black;
+    color: #EDEFF0;
+    padding: 1em;
+    margin: 1em;
+    border: none;
+    float: right;
+}
+
+#register input:focus, #login input:focus {
+    outline: none;
+}
+
+@media (max-width: 60em) {
+    #register, #login {
+        position: absolute;
+        top: 100%;
+        left: 28%;
+    }
+
+    footer {
+        position: absolute;
+        top: 550%;
+    }
+}
+
+@media (max-width: 30em) {
+    html {
+        background-color: white;
+    }
+
+    .hamburger {
+        position: relative;
+    }
+
+    #register, #login {
+        position: absolute;
+        left: 10%;
+    }
+
+    footer {
+        position: absolute;
+        top: 625%;
+    }
+}
