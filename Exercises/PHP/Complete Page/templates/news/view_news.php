@@ -6,9 +6,11 @@
     <img src="http://lorempixel.com/600/300/business/" alt="">
     <p><?= $article['introduction'] ?></p>
     <p><?= $article['fulltext'] ?></p>
+    <?php if (array_key_exists('username', $_SESSION) && !empty($_SESSION['username'])) { ?>
     <div>
       <a style="color:black;" id="edit" href="edit_news.php?id=<?=$article['id']?>">Edit</a>
     </div>
+    <?php } ?>
 
     <section id="comments">
       <?php include('templates/comments/list_comments.php') ?>  
