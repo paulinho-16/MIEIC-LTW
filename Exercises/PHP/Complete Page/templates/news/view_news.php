@@ -6,6 +6,9 @@
     <img src="http://lorempixel.com/600/300/business/" alt="">
     <p><?= $article['introduction'] ?></p>
     <p><?= $article['fulltext'] ?></p>
+    <div>
+      <a style="color:black;" id="edit" href="edit_news.php?id=<?=$article['id']?>">Edit</a>
+    </div>
 
     <section id="comments">
       <?php include('templates/comments/list_comments.php') ?>  
