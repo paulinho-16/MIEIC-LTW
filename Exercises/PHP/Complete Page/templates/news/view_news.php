@@ -9,6 +9,7 @@
     <?php if (array_key_exists('username', $_SESSION) && !empty($_SESSION['username'])) { ?>
     <div>
       <a style="color:black;" id="edit" href="edit_news.php?id=<?=$article['id']?>">Edit</a>
+      <a style="color:black;" id="delete" href="delete_news.php?id=<?=$article['id']?>">Delete</a>
     </div>
     <?php } ?>
 

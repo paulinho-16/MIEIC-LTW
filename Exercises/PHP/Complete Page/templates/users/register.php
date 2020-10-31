@@ -1,6 +1,6 @@
 <section id="login">
     <h2>Register</h2>
-    <form action="action_register.php" method="post">
+    <form action="actions/action_register.php" method="post">
         <label>Username:
             <input type="text" name="username">
         </label>

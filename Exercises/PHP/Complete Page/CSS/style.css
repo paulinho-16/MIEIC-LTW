@@ -34,11 +34,6 @@ header > h2 {
     padding-left: 0.9em;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
-
 #hamburger {
     display: none;
 }

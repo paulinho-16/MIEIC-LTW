@@ -1,5 +1,5 @@
-<form action="actions/action_edit_news.php" method="post">
-    <h2>Editing News</h2>
+<form action="actions/action_add_news.php" method="post">
+    <h2>Add News</h2>
     <input type="hidden" name="id" value="<?=$id?>">
     <label>Title:
         <div><input type="text" name="title"></div>
@@ -9,6 +9,9 @@
     </label> <br>
     <label>Fulltext:
         <div><textarea name="fulltext" cols="80" rows="20"></textarea></div>
+    </label> <br>
+    <label>Tags:
+        <div><input type="text" name="tags"></div>
     </label>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Add">
 </form>

@@ -17,7 +17,8 @@
         <h2><a href="list_news.php">Where fake news are born!</a></h2>
         <div id="signup">
             <?php if (array_key_exists('username', $_SESSION) && !empty($_SESSION['username'])) { ?>
-                <a href="action_logout.php">Logout</a>
+                <a href="add_news.php">Add News</a>
+                <a href="actions/action_logout.php">Logout</a>
             <?php } else { ?>
                 <a href="register.php">Register</a>
                 <a href="login.php">Login</a>
