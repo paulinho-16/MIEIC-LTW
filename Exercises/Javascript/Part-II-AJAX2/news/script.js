@@ -1,6 +1,12 @@
 let commentForm = document.querySelector("#comments form")
 commentForm.addEventListener('submit', submitComment)
 
+function encodeForAjax(data) {
+    return Object.keys(data).map(function(k){
+      return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
+    }).join('&')
+}
+
 function submitComment(event) {
     event.preventDefault()
 
@@ -15,8 +21,14 @@ function submitComment(event) {
     let username = commentForm.querySelector("input[name=username]").value
     let text = commentForm.querySelector("textarea[name=text]").value
 
-    console.log("ID: ", id)
-    console.log("Comment ID: ", comment_id)
-    console.log("Username: ", username)
-    console.log("Text: ", text)
+    let request = new XMLHttpRequest()
+    request.addEventListener('load', receiveComments)
+
+    request.open("post", "api_add_comment.php", true)
+    request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
+    request.send(encodeForAjax({id: id, comment_id: comment_id, username: username, text: text}))
+}
+
+function receiveComments() {
+
 }
