@@ -30,5 +30,38 @@ function submitComment(event) {
 }
 
 function receiveComments() {
+    response = JSON.parse(this.responseText)
+    comments = document.querySelector('#comments')
 
+    response.forEach (function(comment) {
+        const comment_id = comment['id']
+        const published = comment['published']
+        const text = comment['text']
+        const username = comment['username']
+
+        let newArticle = document.createElement('article')
+        newArticle.setAttribute('class', 'comment')
+        
+        let idSpan = document.createElement('span')
+        idSpan.setAttribute('class', 'id')
+        idSpan.innerText = comment_id
+
+        let userSpan = document.createElement('span')
+        userSpan.setAttribute('class', 'user')
+        userSpan.innerText = username
+
+        let dateSpan = document.createElement('span')
+        dateSpan.setAttribute('class', 'date')
+        dateSpan.innerText = published
+
+        let content = document.createElement('p')
+        content.innerText = text
+
+        newArticle.appendChild(idSpan)
+        newArticle.appendChild(userSpan)
+        newArticle.appendChild(dateSpan)
+        newArticle.appendChild(content)
+
+        comments.insertBefore(newArticle, commentForm)
+    })
 }

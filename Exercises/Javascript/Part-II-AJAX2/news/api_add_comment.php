@@ -11,5 +11,9 @@
     addComment($id, $username, $text);
     $comments = fetchComments($id, $comment_id);
 
+    foreach ($comments as $k => $comment) {
+        $comments[$k]['published'] = date('Y-m-d H:i:s', $comments[$k]['published']);
+    }
+
     echo json_encode($comments);
 ?>
