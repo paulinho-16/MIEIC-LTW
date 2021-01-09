@@ -6,7 +6,7 @@
   </head>
   <body>
     <form action="myscript.php">
-      Username: <input type="text" pattern="" name="username" required="required"/>
+      Username: <input type="text" pattern="^[A-Za-z][A-Za-z0-9]{3,8}[A-Za-z]$" name="username" required="required"/>
       <br/>
       <input type="submit" value="Try"/>
     </form>
