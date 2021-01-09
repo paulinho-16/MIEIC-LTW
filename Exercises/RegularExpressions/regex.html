@@ -8,6 +8,8 @@
     <form action="myscript.php">
       Username: <input type="text" pattern="^[A-Za-z][A-Za-z0-9]{3,8}[A-Za-z]$" name="username" required="required"/>
       <br/>
+      Real Name: <input type="text" pattern="^[^0-9\\|!&quot;@#£$§%&/()=?{[\]}'«»*+]+$" name="realname" required="required"/>
+      <br/>
       <input type="submit" value="Try"/>
     </form>
   </body>
